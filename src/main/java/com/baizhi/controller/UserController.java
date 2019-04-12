@@ -19,6 +19,8 @@ public class UserController {
     @RequestMapping("selectAll")
     public String getUsers(ModelMap modelMap) {
         //============================================
+
+        //本地修改----------------
         List<User> list = userService.selectAll();
         modelMap.addAttribute("list", list);
         return "forward:/index.jsp";
