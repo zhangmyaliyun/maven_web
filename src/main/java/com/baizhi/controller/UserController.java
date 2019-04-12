@@ -18,7 +18,7 @@ public class UserController {
     //@ResponseBody
     @RequestMapping("selectAll")
     public String getUsers(ModelMap modelMap) {
-        
+        //============================================
         List<User> list = userService.selectAll();
         modelMap.addAttribute("list", list);
         return "forward:/index.jsp";
